@@ -19,9 +19,9 @@ class UserSeeder extends Seeder
     		'name'=>'Jhonny Fernandez',
     		'email'=>'jhonnyfernandez@gmail.com',
     		'password'=>bcrypt('jfv123')
-    	]);
+    	])->assignRole('Admin');
  
         // otros 
-        user::factory(9)->create();
+        user::factory(99)->create();
     }
 }
